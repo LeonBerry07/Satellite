@@ -2,11 +2,17 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Badge from '../components/Badge.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import LinkedInIcon from '../components/Icons/LinkedIn.astro';
+import GitHubIcon from '../components/Icons/GitHub.astro';
+import MailIcon from '../components/Icons/MailIcon.astro';
+import SocialPill from'../components/SocialPill.astro';
 ---
 
 <Layout title="Bruno Leonel Mendiberry">
 	<main>
-		<section class="w-full mx-auto lg:w-[740px] py-44">
+
+		<SectionContainer>
 			<h1 class="text-white text:-2xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-10">Hey, I'm Bruno!
 				<a 
 				href="https://www.linkedin.com/in/bruno-leonel-a40110260/"
@@ -17,6 +23,32 @@ import Badge from '../components/Badge.astro';
 			    </a>
 		    </h1>
 			<h2 class="text-2xl opacity-80 text-wrap">Three Years of experience....</h2>
-		</section>
+		</SectionContainer>
+
+		<SectionContainer>
+			<ul class="flex gap-x-2">
+				<li>
+					<SocialPill href="https://www.linkedin.com/in/bruno-leonel-a40110260/">
+						<LinkedInIcon class="w-6 h-6"/>
+						LinkedIn
+					</SocialPill>
+				</li>
+				<li>
+					<SocialPill href="https://github.com/LeonBerry07">
+						<GitHubIcon class="w-6 h-6"/>
+						GitHub
+					</SocialPill>
+				</li>
+				<li>
+					<SocialPill>
+						<MailIcon class="w-6 h-6"/>
+						
+							leonberry07@gmail.com
+						
+					</SocialPill>
+				</li>
+			</ul>
+		</SectionContainer>
+
 	</main>
 </Layout>
