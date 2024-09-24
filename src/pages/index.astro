@@ -7,12 +7,14 @@ import LinkedInIcon from '../components/Icons/LinkedIn.astro';
 import GitHubIcon from '../components/Icons/GitHub.astro';
 import MailIcon from '../components/Icons/MailIcon.astro';
 import SocialPill from'../components/SocialPill.astro';
+import ProjectsIcon from '../components/Icons/IconProjects.astro';
+import Projects from '../components/Projects.astro';
 ---
 
 <Layout title="Bruno Leonel Mendiberry">
 	<main>
 
-		<SectionContainer>
+		<SectionContainer class="py-44">
 			<h1 class="text-white text:-2xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-10">Hey, I'm Bruno!
 				<a 
 				href="https://www.linkedin.com/in/bruno-leonel-a40110260/"
@@ -23,10 +25,7 @@ import SocialPill from'../components/SocialPill.astro';
 			    </a>
 		    </h1>
 			<h2 class="text-2xl opacity-80 text-wrap">Three Years of experience....</h2>
-		</SectionContainer>
-
-		<SectionContainer>
-			<ul class="flex gap-x-2">
+			<ul class="flex gap-x-2 py-10">
 				<li>
 					<SocialPill href="https://www.linkedin.com/in/bruno-leonel-a40110260/">
 						<LinkedInIcon class="w-6 h-6"/>
@@ -40,7 +39,7 @@ import SocialPill from'../components/SocialPill.astro';
 					</SocialPill>
 				</li>
 				<li>
-					<SocialPill>
+					<SocialPill href="mailto:leonberry07@gmail.com">
 						<MailIcon class="w-6 h-6"/>
 						
 							leonberry07@gmail.com
@@ -48,6 +47,29 @@ import SocialPill from'../components/SocialPill.astro';
 					</SocialPill>
 				</li>
 			</ul>
+		</SectionContainer>
+
+		<SectionContainer class="pb-32">
+			<h2 class="text-2xl text-wrap flex gap-x-2">
+				<ProjectsIcon class="size-6"/>
+				Projects
+			</h2>
+			<Projects/>
+		</SectionContainer>
+
+		<SectionContainer class='pb-32'>
+			<h2 class="text-2xl text-wrap pb-5">
+				About Me 👻
+			</h2>
+			<p class="text-xl opacity-80 text-wrap">
+				Hola, soy Bruno Leonel Mendiberry 👋
+
+            Me desempeño como Desarrollador Fullstack, con background en electrónica e ingenieria en sonido, también tengo conocimientos de edición de video y fotografía.
+
+            Soy un amante de la tecnología e informática desde toda la vida, tanto desde el apartado del hardware como el apartado del software.
+
+            Actualmente desarrollo proyectos que me permitan crecer como programador, tanto desde el lado técnico como creativo. Dichos proyectos están relacionados a mis gustos personales e ideas que creo hacen falta implementar en la sociedad.
+			</p>
 		</SectionContainer>
 
 	</main>

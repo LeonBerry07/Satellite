@@ -1,0 +1,67 @@
+---
+const PROJECTS = [
+    {
+        title: 'Projects 1',
+        description: 'Lorem ipsum',
+        linkl:'#',
+        github:'#',
+        image:'https...',
+    }
+]
+
+import SocialPill from "./SocialPill.astro";
+import GitHubIcon from "./Icons/GitHub.astro";
+import CodeIcon from "./Icons/CodeIcon.astro";
+---
+
+<div class="py-10">
+    <h3 class="opacity-80 pb-5">
+        Deal Up!
+    </h3>
+    <p class="pb-5">Emprendedores pueden presentar sus proyectos para que inversionistas que lo consideren
+        valioso y con futuro prometedor decidan apoyarlo con la cantidad de dinero que deseen
+        hasta completar la meta del dinero necesario para que el proyecto despegue y comience a
+        desarrollarse.
+    </p>
+    <ul class="pb-5 flex justify-between">
+        <a>
+            React.js
+        </a>
+        <CodeIcon/>
+        <a>
+            Next.js
+        </a>
+        <CodeIcon/>
+        <a>
+            Tailwind.css
+        </a>
+        <CodeIcon/>
+        <a>
+            Node.js
+        </a>
+        <CodeIcon/>
+        <a>
+            Cloudinary
+        </a>
+        <CodeIcon/>
+        <a>
+            PostgreSQL
+        </a>
+    </ul>
+    <ul class="flex gap-x-2 pb-5">
+        <SocialPill href="https://start-bussines.vercel.app/">
+            App
+        </SocialPill>
+        <SocialPill href="https://github.com/AdielHdz/StartBussines">
+            Front
+            <GitHubIcon class="size-6"/>
+        </SocialPill>
+        <SocialPill href="https://github.com/GJVizconde/api_DealUp">
+            Back
+            <GitHubIcon class="size-6"/>
+        </SocialPill>
+
+      
+    </ul>
+    <img src="../../public/Dealup.jpg" class="rounded shadow-2xl shadow-white/20" />
+</div>
