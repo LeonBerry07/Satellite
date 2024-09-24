@@ -15,16 +15,16 @@ import Projects from '../components/Projects.astro';
 	<main>
 
 		<SectionContainer class="py-44">
-			<h1 class="text-white text:-2xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-10">Hey, I'm Bruno!
+			<h1 class="text-white text:-2xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-10">Hola, Soy Bruno!
 				<a 
 				href="https://www.linkedin.com/in/bruno-leonel-a40110260/"
 				target="_blank"
 				rel="noopener"
 				class="flex justify-center items-center">
-				<Badge>Available for work</Badge>
+				<Badge>Disponible para trabajar</Badge>
 			    </a>
 		    </h1>
-			<h2 class="text-2xl opacity-80 text-wrap">Three Years of experience....</h2>
+			<h2 class="text-2xl opacity-80 text-wrap"></h2>
 			<ul class="flex gap-x-2 py-10">
 				<li>
 					<SocialPill href="https://www.linkedin.com/in/bruno-leonel-a40110260/">
@@ -49,17 +49,17 @@ import Projects from '../components/Projects.astro';
 			</ul>
 		</SectionContainer>
 
-		<SectionContainer class="pb-32">
-			<h2 class="text-2xl text-wrap flex gap-x-2">
+		<SectionContainer id="proyectos" class="pb-32">
+			<h2 class="text-2xl text-wrap flex gap-x-2 py-10">
 				<ProjectsIcon class="size-6"/>
-				Projects
+				Proyectos
 			</h2>
 			<Projects/>
 		</SectionContainer>
 
-		<SectionContainer class='pb-32'>
+		<SectionContainer id="sobre-mí" class='pb-32'>
 			<h2 class="text-2xl text-wrap pb-5">
-				About Me 👻
+				Sobre Mí 👻
 			</h2>
 			<p class="text-xl opacity-80 text-wrap">
 				Hola, soy Bruno Leonel Mendiberry 👋
