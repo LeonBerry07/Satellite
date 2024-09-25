@@ -1,0 +1,53 @@
+---
+const PROJECTS = [
+    {
+        title: 'Projects 1',
+        description: 'Lorem ipsum',
+        linkl:'#',
+        github:'#',
+        image:'https...',
+    }
+]
+
+import SocialPill from "./SocialPill.astro";
+import GitHubIcon from "./Icons/GitHub.astro";
+import CodeIcon from "./Icons/CodeIcon.astro";
+---
+
+<div class="py-10">
+    <h3 class="opacity-80 pb-5">
+        Portfolio Personal
+    </h3>
+    <p class="pb-5">
+        Este es mi portfolio, un vistazo general de mi camino en el mundo IT como desarrollador web.
+    </p>
+    <ul class="pb-5 flex justify-between">
+        <a>
+            Astro
+        </a>
+        <CodeIcon/>
+        <a>
+            Javascript
+        </a>
+        <CodeIcon/>
+        <a>
+            Tailwind.css
+        </a>
+        <CodeIcon/>
+        <a>
+            HTML
+        </a>
+    </ul>
+    <ul class="flex gap-x-2 pb-5">
+        <SocialPill href="https://bruno-mendiberry.netlify.app/">
+            App
+        </SocialPill>
+        <SocialPill href="https://github.com/LeonBerry07/Satellite">
+            Front
+            <GitHubIcon class="size-6"/>
+        </SocialPill>
+
+      
+    </ul>
+    <img src="/Satellite.png" alt="Portfolio" class="rounded shadow-2xl shadow-white/20" />
+</div>

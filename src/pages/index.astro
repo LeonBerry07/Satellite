@@ -9,6 +9,7 @@ import MailIcon from '../components/Icons/MailIcon.astro';
 import SocialPill from'../components/SocialPill.astro';
 import ProjectsIcon from '../components/Icons/IconProjects.astro';
 import Projects from '../components/Projects.astro';
+import Portfolio from '../components/Portfolio.astro';
 ---
 
 <Layout title="Bruno Leonel Mendiberry">
@@ -52,11 +53,12 @@ import Projects from '../components/Projects.astro';
 		</SectionContainer>
 
 		<SectionContainer id="proyectos" class="pb-32">
-			<h2 class="text-2xl text-wrap flex gap-x-2 py-10">
+			<h2 class="text-2xl text-wrap flex gap-x-2 py-10 items-center">
 				<ProjectsIcon class="size-6"/>
 				Proyectos
 			</h2>
 			<Projects/>
+			<Portfolio/>
 		</SectionContainer>
 
 		<SectionContainer id="sobre-mí" class='pb-32'>
