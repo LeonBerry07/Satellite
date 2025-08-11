@@ -1,0 +1,45 @@
+---
+const PROJECTS = [
+    {
+        title: 'Projects 1',
+        description: 'Lorem ipsum',
+        linkl:'#',
+        github:'#',
+        image:'https...',
+    }
+]
+
+import SocialPill from "./SocialPill.astro";
+import GitHubIcon from "./Icons/GitHub.astro";
+import CodeIcon from "./Icons/CodeIcon.astro";
+---
+
+<div class="py-10">
+    <h3 class="opacity-80 pb-5">
+        SoyHenry! Bootcamp
+    </h3>
+    <p class="pb-5">
+        FullStack Web Developer
+    </p>
+    <ul class="pb-5 flex justify-between">
+        <a>
+            Desde Octubre, 2022
+        </a>
+        <CodeIcon/>
+        <a>
+            Hasta Agosto 2023
+        </a>
+    </ul>
+    <!-- <ul class="flex gap-x-2 pb-5">
+        <SocialPill href="https://bruno-mendiberry.netlify.app/">
+            App 1
+        </SocialPill>
+    </ul>
+    <img src="/Satellite.png" alt="Portfolio" class="rounded shadow-2xl shadow-white/20" />
+     <ul class="flex gap-x-2 pb-5">
+        <SocialPill href="https://bruno-mendiberry.netlify.app/">
+            App 2
+        </SocialPill>
+    </ul>
+    <img src="/Satellite.png" alt="Portfolio" class="rounded shadow-2xl shadow-white/20" /> -->
+</div>
