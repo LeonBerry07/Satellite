@@ -1,31 +1,42 @@
 ---
 import CodeIcon from "./Icons/CodeIcon.astro";
+
+const {
+  institution,
+  career,
+  start,
+  end,
+  status,
+} = Astro.props;
 ---
 
 <div class="study-card">
   <div class="study-header">
     <div>
-      <h3>Universidad Tecnológica Nacional</h3>
+      <h3>{institution}</h3>
+
       <p class="career">
-        Tecnicatura Universitaria en Programación
+        {career}
       </p>
     </div>
 
-    <span class="status">
-      En curso
+    <span class={`status ${status === "En curso" ? "active" : ""}`}>
+      {status}
     </span>
   </div>
 
   <div class="timeline">
-    <span>Diciembre 2024</span>
+    <span>{start}</span>
 
     <div class="timeline-center">
       <div class="line"></div>
-      <CodeIcon class="icon"/>
+
+      <CodeIcon class="icon" />
+
       <div class="line"></div>
     </div>
 
-    <span>Diciembre 2026</span>
+    <span>{end}</span>
   </div>
 </div>
 
@@ -64,7 +75,7 @@ import CodeIcon from "./Icons/CodeIcon.astro";
   }
 
   .study-header h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 700;
     color: white;
   }
@@ -79,12 +90,18 @@ import CodeIcon from "./Icons/CodeIcon.astro";
     padding: 6px 12px;
     border-radius: 999px;
 
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.1);
+
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+
+  .status.active {
     background: rgba(34, 211, 238, 0.12);
     border: 1px solid rgba(34, 211, 238, 0.2);
 
     color: #22d3ee;
-    font-size: 0.85rem;
-    white-space: nowrap;
   }
 
   .timeline {

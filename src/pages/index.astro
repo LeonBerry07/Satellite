@@ -15,6 +15,7 @@ import UNO from '../components/UNO.astro';
 import Henry from '../components/Henry.astro';
 import UTN from '../components/UTN.astro';
 import Skills from "../components/Skills.astro";
+import StudyCard from "../components/StudyCard.astro";
 ---
 
 <Layout title="Bruno Leonel Mendiberry">
@@ -72,9 +73,29 @@ import Skills from "../components/Skills.astro";
 				<ProjectsIcon class="size-6"/>
 				Estudios Formales
 			</h2>
-			<UNO/>
-			<Henry/>
-			<UTN/>
+			<StudyCard
+			institution="Universidad Nacional del Oeste"
+			career="Ingeniería Informática"
+			start="2019"
+			end="2022"
+			status="Finalizado"
+			/>
+
+			<StudyCard
+			institution="Soy Henry"
+			career="Full Stack Web Developer"
+			start="2022"
+			end="2023"
+			status="Finalizado"
+			/>
+
+			<StudyCard
+			institution="Universidad Tecnológica Nacional"
+			career="Tecnicatura Universitaria en Programación"
+			start="2024"
+			end="2026"
+			status="En curso"
+			/>
 		</SectionContainer>
 
 		<SectionContainer id="skills" class="pb-32">
