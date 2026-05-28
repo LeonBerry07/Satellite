@@ -16,6 +16,7 @@ import Henry from '../components/Henry.astro';
 import UTN from '../components/UTN.astro';
 import Skills from "../components/Skills.astro";
 import StudyCard from "../components/StudyCard.astro";
+import AboutMe from "../components/aboutMe.astro";
 ---
 
 <Layout title="Bruno Leonel Mendiberry">
@@ -102,20 +103,9 @@ import StudyCard from "../components/StudyCard.astro";
 			<Skills/>
 		</SectionContainer>
 
-		<SectionContainer id="sobre-mí" class='pb-32'>
-			<h2 class="text-4xl text-wrap pb-5">
-				Sobre Mí 👻
-			</h2>
-			<p class="text-xl opacity-80 text-wrap">
-				Hola, soy Bruno Leonel Mendiberry 👋
-
-            Me desempeño como Desarrollador Fullstack, con background en electrónica e ingenieria en sonido, también tengo conocimientos de edición de video y fotografía.
-
-            Soy un amante de la tecnología e informática desde toda la vida, tanto desde el apartado del hardware como el apartado del software.
-
-            Actualmente desarrollo proyectos que me permitan crecer como programador, tanto desde el lado técnico como creativo. Dichos proyectos están relacionados a mis gustos personales e ideas que creo hacen falta implementar en la sociedad.
-			</p>
+		<SectionContainer id="sobre-mí" class="pb-32">
+			<AboutMe/>
 		</SectionContainer>
-
+		
 	</main>
 </Layout>

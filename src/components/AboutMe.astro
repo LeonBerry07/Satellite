@@ -1,0 +1,211 @@
+<section class="sobre-mi" id="sobre-mi">
+  <div class="about-card">
+    
+    <div class="about-header">
+      <h2>Sobre Mí 👻</h2>
+
+      <p>
+        Soy Bruno Leonel Mendiberry, desarrollador fullstack de Buenos Aires,
+        Argentina.
+      </p>
+    </div>
+
+    <div class="about-grid">
+
+      <div class="about-block">
+        <span class="emoji">💻</span>
+
+        <div>
+          <h3>Desarrollo Web</h3>
+
+          <p>
+            Hace más de tres años desarrollo proyectos frontend y fullstack
+            utilizando tecnologías modernas como Astro, React y JavaScript.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-block">
+        <span class="emoji">🎵</span>
+
+        <div>
+          <h3>Perfil Creativo</h3>
+
+          <p>
+            También tengo experiencia en música, ingeniería en sonido,
+            edición de video y fotografía.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-block">
+        <span class="emoji">🚀</span>
+
+        <div>
+          <h3>Objetivo</h3>
+
+          <p>
+            Actualmente desarrollo proyectos que mezclan creatividad,
+            tecnología y experiencias digitales enfocadas en resolver ideas
+            reales.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="about-tags">
+      <span>Astro</span>
+      <span>React</span>
+      <span>JavaScript</span>
+      <span>Frontend</span>
+      <span>UI/UX</span>
+      <span>Música</span>
+      <span>Fotografía</span>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .sobre-mi {
+    padding: 90px 20px;
+    color: white;
+  }
+
+  .about-card {
+    max-width: 900px;
+    margin: 0 auto;
+
+    padding: 32px;
+    border-radius: 24px;
+
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    transition:
+      background 0.2s ease,
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .about-card:hover {
+    transform: translateY(-2px);
+
+    background: rgba(255, 255, 255, 0.05);
+
+    box-shadow:
+      0 0 30px rgba(34, 211, 238, 0.08);
+  }
+
+  .about-header {
+    margin-bottom: 36px;
+  }
+
+  .about-header h2 {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+    color: white;
+  }
+
+  .about-header p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    line-height: 1.7;
+    max-width: 700px;
+  }
+
+  .about-grid {
+    display: grid;
+    gap: 20px;
+  }
+
+  .about-block {
+    display: flex;
+    gap: 18px;
+
+    padding: 20px;
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.03);
+
+    transition:
+      background 0.2s ease,
+      transform 0.2s ease;
+  }
+
+  .about-block:hover {
+    background: rgba(255, 255, 255, 0.05);
+
+    transform: translateX(4px);
+  }
+
+  .emoji {
+    font-size: 1.6rem;
+    line-height: 1;
+  }
+
+  .about-block h3 {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    color: white;
+  }
+
+  .about-block p {
+    opacity: 0.75;
+    line-height: 1.6;
+  }
+
+  .about-tags {
+    margin-top: 32px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .about-tags span {
+    padding: 8px 13px;
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    font-size: 0.9rem;
+
+    transition:
+      background 0.2s ease,
+      transform 0.2s ease,
+      border-color 0.2s ease;
+  }
+
+  .about-tags span:hover {
+    background: rgba(34, 211, 238, 0.12);
+    border-color: rgba(34, 211, 238, 0.3);
+
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 640px) {
+    .sobre-mi {
+      padding: 70px 20px;
+    }
+
+    .about-card {
+      padding: 24px;
+    }
+
+    .about-block {
+      flex-direction: column;
+    }
+
+    .about-header h2 {
+      font-size: 1.9rem;
+    }
+
+    .about-header p {
+      font-size: 1rem;
+    }
+  }
+</style>
+                    
