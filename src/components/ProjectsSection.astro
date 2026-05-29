@@ -1,0 +1,50 @@
+---
+import ProjectCard from "./ProjectCard.astro";
+
+const projects = [
+  {
+    title: "Berry's Music Store",
+    description: "Tienda musical inspirada en iTunes.",
+    image: "logo-berrys.png",
+    tech: ["Javascript", "React", "CSS", "Node.js"],
+    front: "https://github.com/LeonBerry07/Berry-s-front",
+    back: "https://github.com/LeonBerry07/Berry-s-back",
+    demo: "#",
+  },
+  {
+    title: "Deal Up!",
+    description: "Plataforma de inversión en proyectos.",
+    image: "logo-dealup.jpg",
+    tech: ["React.js", "Next.js", "Tailwind.css", "Node.js", "Cloudinary", "PostgreSQL"],
+    github: "#",
+    front: "https://github.com/AdielHdz/StartBussines",
+    back: "https://github.com/GJVizconde/api_DealUp",
+    demo: "https://start-bussines.vercel.app/",
+  },
+  {
+    title: "Portfolio Personal",
+    description: "Este es mi portfolio, un vistazo general de mi camino en el mundo IT como desarrollador web.",
+    image: "logo-portfolio.jpg",
+    tech: ["Astro", "JavaScript", "Tailwind.css"],
+    front: "https://github.com/LeonBerry07/Satellite",
+    demo: "https://bruno-mendiberry.netlify.app/",
+  },
+];
+---
+
+<div class="projects-grid">
+  {projects.map((project) => (
+    <ProjectCard {...project} />
+  ))}
+</div>
+
+<style>
+  .projects-grid {
+    display: grid;
+
+    grid-template-columns:
+      repeat(auto-fit, minmax(320px, 1fr));
+
+    gap: 24px;
+  }
+</style>
