@@ -16,43 +16,194 @@ import ProjectsSection from '../components/ProjectsSection.astro';
 
 <Layout title="Bruno Leonel Mendiberry">
 	<main>
-
 		<SectionContainer class="py-44">
-			<h1 class="text-white text:-2xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-10">Hola, soy Bruno!
-				<a 
-				href="https://www.linkedin.com/in/bruno-leonel-a40110260/"
-				target="_blank"
-				rel="noopener"
-				class="flex justify-center items-center">
-				<!-- <Badge>Disponible para trabajar</Badge> -->
-			    </a>
-		    </h1>
-			<h2 class="text-1xl opacity-80 text-wrap text-xl">
-				Tres años inmerso en el mundo IT como Desarrollador Web. De Buenos Aires, Argentina. Universidad, cursos e internet me han ayudado a llevar adelante mi camino.
-			</h2>
-			<ul class="flex gap-x-2 py-10">
+			<div class="hero-content">
+
+				<h1 class="hero-title">
+				Hola, soy <span class="gradient-text">Bruno</span>
+				</h1>
+
+				<h2 class="hero-subtitle">
+				Desarrollador Full Stack
+				</h2>
+
+				<p class="hero-description">
+				Desarrollador Full Stack de Buenos Aires apasionado por la
+				tecnología, la música y la creación de experiencias digitales.
+
+				Actualmente desarrollo proyectos con Astro, React y JavaScript,
+				combinando creatividad y funcionalidad para construir productos
+				modernos y útiles.
+				</p>
+
+				<div class="hero-actions">
+				<a href="#proyectos" class="hero-btn primary">
+					Ver proyectos
+				</a>
+
+				<a href="#sobre-mí" class="hero-btn secondary">
+					Sobre mí
+				</a>
+				</div>
+
+				<div class="hero-highlights">
+				<span>🚀 3+ años desarrollando</span>
+				<span>💻 Proyectos personales activos</span>
+				<span>🎵 Música y sonido</span>
+				<span>📍 Buenos Aires, Argentina</span>
+				</div>
+
+				<ul class="flex gap-x-2 py-10 flex-wrap">
 				<li>
 					<SocialPill href="https://www.linkedin.com/in/bruno-leonel-a40110260/">
-						<LinkedInIcon class="w-6 h-6"/>
-						LinkedIn
+					<LinkedInIcon class="w-6 h-6" />
+					LinkedIn
 					</SocialPill>
 				</li>
+
 				<li>
 					<SocialPill href="https://github.com/LeonBerry07">
-						<GitHubIcon class="w-6 h-6"/>
-						GitHub
+					<GitHubIcon class="w-6 h-6" />
+					GitHub
 					</SocialPill>
 				</li>
+
 				<li>
 					<SocialPill href="mailto:brunoleonelmendiberry@gmail.com">
-						<MailIcon class="w-6 h-6"/>
-						
-							brunoleonelmendiberry@gmail.com
-						
+					<MailIcon class="w-6 h-6" />
+					brunoleonelmendiberry@gmail.com
 					</SocialPill>
 				</li>
-			</ul>
-		</SectionContainer>
+				</ul>
+
+			</div>
+
+			</SectionContainer>
+
+			<style>
+			.hero-content {
+				max-width: 900px;
+			}
+
+			.hero-title {
+				font-size: clamp(3rem, 7vw, 5rem);
+				font-weight: 800;
+				line-height: 1.1;
+				color: white;
+				margin-bottom: 12px;
+			}
+
+			.gradient-text {
+				background: linear-gradient(
+				90deg,
+				#7c3aed,
+				#22d3ee
+				);
+
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+			}
+
+			.hero-subtitle {
+				font-size: clamp(1.4rem, 3vw, 2rem);
+				font-weight: 600;
+				color: rgba(255, 255, 255, 0.9);
+
+				margin-bottom: 24px;
+			}
+
+			.hero-description {
+				font-size: 1.15rem;
+				line-height: 1.8;
+				color: rgba(255, 255, 255, 0.75);
+
+				max-width: 720px;
+			}
+
+			.hero-actions {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 12px;
+
+				margin-top: 32px;
+				margin-bottom: 28px;
+			}
+
+			.hero-btn {
+				padding: 12px 20px;
+				border-radius: 12px;
+
+				text-decoration: none;
+				font-weight: 600;
+
+				transition:
+				transform 0.2s ease,
+				opacity 0.2s ease;
+			}
+
+			.hero-btn:hover {
+				transform: translateY(-2px);
+			}
+
+			.hero-btn.primary {
+				background: linear-gradient(
+				90deg,
+				#7c3aed,
+				#22d3ee
+				);
+
+				color: white;
+			}
+
+			.hero-btn.secondary {
+				color: white;
+
+				border: 1px solid rgba(255,255,255,0.15);
+
+				background: rgba(255,255,255,0.03);
+			}
+
+			.hero-highlights {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 12px;
+
+				margin-top: 8px;
+			}
+
+			.hero-highlights span {
+				padding: 8px 14px;
+
+				border-radius: 999px;
+
+				background: rgba(255,255,255,0.05);
+				border: 1px solid rgba(255,255,255,0.08);
+
+				font-size: 0.95rem;
+
+				transition:
+				transform 0.2s ease,
+				background 0.2s ease;
+			}
+
+			.hero-highlights span:hover {
+				transform: translateY(-2px);
+
+				background: rgba(34, 211, 238, 0.1);
+			}
+
+			@media (max-width: 640px) {
+				.hero-actions {
+				flex-direction: column;
+				align-items: stretch;
+				}
+
+				.hero-btn {
+				text-align: center;
+				}
+			}
+			</style>
 
 		<SectionContainer id="proyectos" class="pb-32">
 			<h2 class="text-4xl text-wrap flex gap-x-2 py-10 items-center">
